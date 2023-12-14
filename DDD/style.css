@@ -1,0 +1,102 @@
+html{
+    font-family: arial;
+    font-size:20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+body{
+    background-image: url('middle.png');
+    background-repeat: repeat-y;
+    background-size: 100% 19px;
+}
+#content{
+    position:relative;
+    top:-350px;
+}
+#pageTitle{
+    background-image: url('top.png');
+    background-size: 100% 573px;
+    display: block;
+    height: 390px;;
+    padding-top: 170px;
+}
+.bgBottom{
+    color:white;
+    padding-left:25%;
+    padding-right:25%;
+    background-image: url('bottom.png');
+    background-size: 100% 573px;
+    display: block;
+    height: 386px;;
+}
+.subjectRow{
+      display: none;
+    width: 50%;
+    padding-left:25%;
+    padding-right:25%;
+}
+.subjectPicture img{
+    display:inline-block;
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+}
+.subjectDetails{
+    display:inline-block;
+    float:right;
+    text-align: left;
+}
+.subjectBrief{
+    display:block;
+    min-height:100px;
+    text-align: center;
+    clear:both;
+    padding-left:25%;
+    padding-right:25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.subjectBriefHeader{
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.subjectSummary{
+    display:block;
+    clear:both;
+    text-align: center;
+
+    border-top: 3px solid #990000;
+    padding-top: 20px;
+
+    border-bottom: 3px solid #990000;
+    padding-bottom: 20px;
+}
+
+.subjectHeader{
+    font-family: monospace;
+    font-weight: bold;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 22px;
+    cursor: pointer;
+    width: 50%;
+    clear:both;
+    margin-bottom: 4px;
+    background-color: black;
+    color:white;
+}
+.subjectRiskRating{
+    padding-top:20px;
+    padding-bottom:20;
+    font-weight: bold;
+    font-size: 28px;
+}
+.active, .subjectHeader:hover {
+  background-color: #990000;
+  cursor: pointer;
+}
+
+
