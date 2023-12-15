@@ -20,18 +20,21 @@ for (i = 0; i < acc.length; i++) {
 }
 
 var iid = setInterval(function(){
+    /* D.D.D. has no official meaning, some variations might occur
+    more frequently than others, but 3 word combination of:
+    adjective, adjective, noun is fine as long as at least one of the
+    two adjectives is 'Dandy' */
     var ddd = [
         adj[Math.floor(Math.random()*adj.length)],
         adj[Math.floor(Math.random()*adj.length)],
         nouns[Math.floor(Math.random()*nouns.length)]
     ];
-    var dpos = 1;
-    if(Math.random() < 0.5){
-        dpos = 0;
-    }
-    ddd[dpos] = "Dandy";
-    dddStr = ddd.join(" ");
-    document.getElementById("pageTitle").innerHTML = dddStr + " Administration Bureau";
-    document.title = "- "+dddStr+" Administration Bureau -";
+
+    /* Gotta Dandy it up somewhere*/
+    ddd[Math.round(Math.random())] = "Dandy";
+    dddab = ddd.join(" ") + " Administration Bureau";
+    
+    document.getElementById("pageTitle").innerHTML = dddab;
+    document.title = "- "+dddab+" -";
 
 },2500); 
