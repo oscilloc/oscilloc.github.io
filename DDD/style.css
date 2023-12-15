@@ -46,6 +46,7 @@ body{
     display:inline-block;
     float:right;
     text-align: left;
+    max-width:350px;
 }
 .subjectBrief{
     display:block;
