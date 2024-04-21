@@ -38,3 +38,37 @@ var iid = setInterval(function(){
     document.title = "- "+dddab+" -";
 
 },2500); 
+
+var charts = document.getElementsByClassName('subjectChart');
+for(var i=0; i < charts.length; i++){
+    var ratings = charts[i].id.replace('chart','ratings');
+    new Chart(charts[i].id, {
+      type: "line",
+    options: {
+        maintainAspectRatio: false,
+        legend: {display: false},
+        scales: {
+          xAxes: [{
+            display: false
+          }],
+          yAxes: [{
+            display: false
+          }],
+        }
+},
+      data: {
+            labels: window[ratings],
+        datasets: [{
+            label: 'Risk Rating',
+            pointRadius:3,
+            pointBackgroundColor: '#990000',
+          fill: false,
+          lineTension: 0,
+          borderColor: '#990000',
+            data: window[ratings]
+        },]
+      }
+    });
+    
+}
+
